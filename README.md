@@ -54,7 +54,7 @@ This project demonstrates:
 ## 📂 Project Structure
 
 ```
-student-record-system/
+srs/
 │
 ├── main.c
 ├── students.txt        # Generated file for persistent storage

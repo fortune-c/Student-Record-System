@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "../include/student.h"
 #include "../include/utils.h"
+#include "../include/file.h"
 
 void exitProgram() {
     printf("\nProgram completed successfully!\n");

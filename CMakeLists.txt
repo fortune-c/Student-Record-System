@@ -5,8 +5,8 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(srs src/main.c
         src/student.c
-        src/file.c
         src/utils.c
         include/student.h
+        include/utils.h
         include/file.h
-        include/utils.h)
+        src/file.c)

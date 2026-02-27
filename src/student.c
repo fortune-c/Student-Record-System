@@ -97,6 +97,22 @@ void removeStudent() {
         printf("Record Not Found.\n");
     }
 };
+
 void searchStudent() {
-    printf("Student");
-};
+    int roll, found = 0;
+
+    printf("Enter Roll Number to search: ");
+    scanf("%d", &roll);
+
+    for (int i = 0; i < studentCount; i++) {
+        if (students[i].rollNumber == roll) {
+            printf("Name: %s\n", students[i].name);
+            printf("Marks: %.2f\n", students[i].marks);
+            found = 1;
+            break;
+        }
+    }
+
+    if (!found)
+        printf("Student not found.\n");
+}

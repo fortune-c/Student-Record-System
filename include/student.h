@@ -10,7 +10,7 @@ typedef struct {
 
 // student.c funcs
 void addStudent();
-void displayStudent();
+void displayStudents();
 void modifyStudent();
 void removeStudent();
 void searchStudent();

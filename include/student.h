@@ -15,12 +15,4 @@ void modifyStudent();
 void removeStudent();
 void searchStudent();
 
-// utils.c funcs
-void calculateAverageMarks();
-void sortStudents(int ascending);
-void saveToFile();
-void loadFromFile();
-void freeMemory();
-
-
 #endif

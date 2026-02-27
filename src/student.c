@@ -74,7 +74,28 @@ void modifyStudent() {
     }
 };
 void removeStudent() {
-    printf("Student");
+    int roll, found = 0;
+
+    printf("Enter roll number to remove: ");
+    scanf("%d", &roll);
+
+    for (int i = 0; i < studentCount; i++) {
+        if (roll == students[i].rollNumber) {
+            for (int j = i; j < studentCount - 1; j++) {
+                students[j] = students[j + 1];
+            }
+
+            studentCount--;
+            students = realloc(students, studentCount * sizeof(Student));
+            printf("Record Removed Successfully.\n");
+            found = 1;
+            break;
+        }
+    }
+
+    if (!found) {
+        printf("Record Not Found.\n");
+    }
 };
 void searchStudent() {
     printf("Student");

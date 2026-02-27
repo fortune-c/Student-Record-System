@@ -96,13 +96,13 @@ srs/
 ### Compile
 
 ```bash
-gcc main.c -o student_records
+gcc main.c -o srs
 ```
 
 ### Run
 
 ```bash
-./student_records
+./srs
 ```
 
 ---
@@ -118,18 +118,6 @@ This project focuses on real-world fundamentals like:
 * Clean function separation
 
 It’s a simple system, but it reinforces core programming foundations that apply to larger systems.
-
----
-
-## 🔮 Possible Improvements
-
-* Binary file storage instead of text
-* Better input validation
-* Use of linked lists instead of arrays
-* Menu-based UI improvements
-* Cross-platform build setup
-* Unit testing
-* Transition to a REST API backend (future upgrade)
 
 ---
 

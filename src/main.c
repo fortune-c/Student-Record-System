@@ -17,7 +17,7 @@ int main(){
 
     printf("Hello. %s\n", username);
 
-    // loadFromFile();
+    loadFromFile();
 
     do {
         printf("\n--- MENU ---\n");
@@ -40,11 +40,14 @@ int main(){
             case 3: modifyStudent(); break;
             case 4: removeStudent(); break;
             case 5: searchStudent(); break;
-            case 6: calculateAverageMarks();
+            case 6: calculateAverageMarks(); break;
             case 7: sortStudents(1); break;
             case 8: sortStudents(0); break;
             case 9: saveToFile(); break;
-            case 0: exitProgram(); break;
+            case 0:
+                saveToFile();
+                exitProgram();
+                break;
             default: printf("Invalid choice\n"); break;
         }
     } while (choice != 0);

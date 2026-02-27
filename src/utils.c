@@ -18,15 +18,19 @@ void calculateAverageMarks() {
 
     printf("Average marks is %.2f.\n", total / studentCount);
 };
+
 void sortStudents(int ascending) {
-    printf("Utils");
-};
-void saveToFile() {
-    printf("Utils");
-};
-void loadFromFile() {
-    printf("Utils");
-};
-void freeMemory() {
-    printf("Utils");
-};
+    for (int i = 0; i < studentCount - 1; i++) {
+        for (int j = i + 1; j < studentCount; j++) {
+            if ((ascending && students[i].marks > students[j].marks) ||
+                (!ascending && students[i].marks < students[j].marks)) {
+
+                Student temp = students[i];
+                students[i] = students[j];
+                students[j] = temp;
+                }
+        }
+    }
+
+    printf("Students sorted successfully.\n");
+}
